@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cc.nevsky.java</groupId>
+    <artifactId>MaestroDb</artifactId>
+    <version>1</version>
+    <name>MaestroDb</name>
+    <description>MaestroDb Liquibase</description>
+    <packaging>pom</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <liquibase.properties>src/main/resources/liquibase.properties</liquibase.properties>
+        <liquibase.changelog>src/main/resources/changelog/changelog-master.xml</liquibase.changelog>
+        <liquibase.version>3.8.3</liquibase.version>
+
+        <postgresql.version>42.2.9</postgresql.version>
+    </properties>
+    <dependencies>
+        <!--JDBC drivers-->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>${liquibase.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>3.8.4</version>
+                <configuration>
+                    <propertyFile>${liquibase.properties}</propertyFile>
+                    <changeLogFile>${liquibase.changelog}</changeLogFile>
+                    <!-- log  -->
+                    <verbose>true</verbose>
+                    <logging>info</logging>
+                    <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

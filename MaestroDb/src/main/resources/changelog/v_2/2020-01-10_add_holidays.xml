@@ -1,0 +1,404 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+
+    <changeSet id="1" author="Aleksandr Nevsky">
+        <comment>Add holidays.</comment>
+        <sql>
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 1, 'Новый год');
+            INSERT INTO events (day, month, event_name)
+            VALUES (7, 1, 'Рождество Христово');
+            INSERT INTO events (day, month, event_name)
+            VALUES (11, 1, 'День заповедников и национальных парков');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 1, 'День работника прокуратуры РФ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (13, 1, 'День российской печати');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 1, 'Старый Новый год');
+            INSERT INTO events (day, month, event_name)
+            VALUES (19, 1, 'Крещение Господне (Святое Богоявление) ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (21, 1, 'День инженерных войск в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (25, 1, 'День студентов (Татьянин день) ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 1, 'День воинской славы России — День снятия блокады города Ленинграда (1944 год');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 1, 'День памяти жертв Холокоста');
+            INSERT INTO events (day, month, event_name)
+            VALUES (2, 2, 'День воинской славы России — День победы в Сталинградской битве в 1943 году');
+            INSERT INTO events (day, month, event_name)
+            VALUES (6, 2, 'День бармена');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 2, 'Масленица (Начало масленичной недели');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 2, 'День российской науки');
+            INSERT INTO events (day, month, event_name)
+            VALUES (9, 2, 'Международный день стоматолога');
+            INSERT INTO events (day, month, event_name)
+            VALUES (9, 2, 'День рождения гражданского воздушного флота в России.');
+            INSERT INTO events (day, month, event_name)
+            VALUES (10, 2, 'День дипломатического работника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 2, 'День Святого Валентина (День всех влюбленных)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 2, 'Последний день Масленицы — прощеное воскресенье, или проводы.');
+            INSERT INTO events (day, month, event_name)
+            VALUES (15, 2, 'День памяти воинов-интернационалистов в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (18, 2, 'День транспортной милиции России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (21, 2, 'Международный день родного языка');
+            INSERT INTO events (day, month, event_name)
+            VALUES (23, 2, 'День воинской славы России — День защитника Отечества');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 3, 'День эксперта-криминалиста МВД; Всемирный день гражданской обороны');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 3, 'Международный женский день');
+            INSERT INTO events (day, month, event_name)
+            VALUES (10, 3, 'День работников архивов');
+            INSERT INTO events (day, month, event_name)
+            VALUES (11, 3, 'День работников органов наркоконтроля');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 3, 'День работников уголовно-исполнительной системы Министерства юстиции России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 3, 'День работников геодезии и картографии ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (16, 3, 'День образования подразделений экономической безопасности в  МВД России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (19, 3, 'День моряка-подводника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (21, 3, 'День работников торговли');
+            INSERT INTO events (day, month, event_name)
+            VALUES (23, 3, 'День работников гидрометеорологической службы России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (25, 3, 'День работника культуры России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 3, 'День внутренних войск МВД России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (28, 3, 'Вход Господень в Иерусалим (Вербное Воскресенье)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (29, 3, 'День специалиста юридической службы в Вооруженных Силах');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 4, 'День смеха');
+            INSERT INTO events (day, month, event_name)
+            VALUES (2, 4, 'День единения народов Белоруссии и России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (4, 4, 'Пасха');
+            INSERT INTO events (day, month, event_name)
+            VALUES (4, 4, 'День геолога');
+            INSERT INTO events (day, month, event_name)
+            VALUES (6, 4, 'День работника следственных органов');
+            INSERT INTO events (day, month, event_name)
+            VALUES (7, 4, 'День рождения Рунета');
+            INSERT INTO events (day, month, event_name)
+            VALUES (11, 4, 'День войск противовоздушной обороны (День войск ПВО)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 4, 'Всемирный день авиации и космонавтики');
+            INSERT INTO events (day, month, event_name)
+            VALUES (15, 4, 'День специалиста по радиоэлектронной борьбе');
+            INSERT INTO events (day, month, event_name)
+            VALUES (18, 4, 'День воинской славы России — Ледовое побоище (1242)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (26, 4, 'Всемирный день интеллектуальной собственности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (28, 4, 'Всемирный день охраны труда');
+            INSERT INTO events (day, month, event_name)
+            VALUES (30, 4, 'День пожарной охраны');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 5, 'Праздник труда ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (5, 5, 'День шифровальщика; День водолаза');
+            INSERT INTO events (day, month, event_name)
+            VALUES (6, 5, 'День святого Георгия Победоносца');
+            INSERT INTO events (day, month, event_name)
+            VALUES (7, 5, 'День радио');
+            INSERT INTO events (day, month, event_name)
+            VALUES (9, 5,
+            'День воинской славы России — День Победы советского народа в Великой Отечественной войне 1941—1945 годов (1945)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (13, 5, 'День Черноморского флота');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 5, 'День фрилансера');
+            INSERT INTO events (day, month, event_name)
+            VALUES (18, 5, 'Международный день музеев; День Балтийского флота');
+            INSERT INTO events (day, month, event_name)
+            VALUES (20, 5, 'Всемирный день метрологии');
+            INSERT INTO events (day, month, event_name)
+            VALUES (21, 5, 'День Тихоокеанского флота; День военного переводчика');
+            INSERT INTO events (day, month, event_name)
+            VALUES (24, 5, 'День кадровика; День славянской письменности и культуры');
+            INSERT INTO events (day, month, event_name)
+            VALUES (25, 5, 'День филолога');
+            INSERT INTO events (day, month, event_name)
+            VALUES (26, 5, 'День российского предпринимательства');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 5, 'Всероссийский день библиотек (День библиотекаря)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (28, 5, 'День пограничника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (29, 5, 'День военного автомобилиста; День ветеранов таможенной службы');
+            INSERT INTO events (day, month, event_name)
+            VALUES (30, 5, 'День химика ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (31, 5, 'День российской адвокатуры');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 6, 'Международный день защиты детей');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 6, 'День Северного флота России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (5, 6, 'День эколога');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 6, 'День социального работника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 6, 'День независимости России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 6, 'День пивовара');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 6, 'День мебельщика');
+            INSERT INTO events (day, month, event_name)
+            VALUES (13, 6, 'День работников легкой промышленности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 6, 'День работников миграционной службы');
+            INSERT INTO events (day, month, event_name)
+            VALUES (20, 6, 'День медицинского работника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (21, 6, 'День кинологических подразделений МВД России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (22, 6, 'День памяти и скорби (начало ВОВ)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (25, 6, 'День дружбы и единения славян');
+            INSERT INTO events (day, month, event_name)
+            VALUES (26, 6, 'День изобретателя и рационализатора');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 6, 'День молодежи России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (3, 7, 'День ГАИ (День ГИБДД МВД РФ)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (4, 7, 'День работников морского и речного флота');
+            INSERT INTO events (day, month, event_name)
+            VALUES (7, 7, 'Иван Купала');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 7, 'Всероссийский день семьи, любви и верности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (10, 7,
+            'День воинской славы России — День победы русской армии под командованием Петра I над шведами в Полтавском сражении (1709)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (11, 7, 'День рыбака; День российской почты ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (17, 7, 'День рождения морской авиации ВМФ России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (18, 7, 'День металлурга ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (25, 7, 'День военно-морского флота (День Нептуна) ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (26, 7, 'День парашютиста');
+            INSERT INTO events (day, month, event_name)
+            VALUES (28, 7, 'День PR-специалиста');
+            INSERT INTO events (day, month, event_name)
+            VALUES (30, 7, 'День системного администратора');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 8, 'День тыла вооруженных сил РФ; Профессиональный праздник сотрудников инкассации');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 8, 'День железнодорожника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (2, 8, 'День воздушно-десантных войск (День ВДВ)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (6, 8, 'День железнодорожных войск');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 8, 'День строителя ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (9, 8,
+            'День воинской славы России — День первой в российской истории морской победы русского флота под командованием Петра Первого над шведами у мыса Гангут (1714)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 8, 'День Военно-воздушных сил (День ВВС)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 8, 'День физкультурника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 8, 'День Воздушного флота России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 8, 'День археолога');
+            INSERT INTO events (day, month, event_name)
+            VALUES (22, 8, 'День Государственного флага Российской Федерации');
+            INSERT INTO events (day, month, event_name)
+            VALUES (23, 8,
+            'День воинской славы России — День разгрома советскими войсками немецко-фашистских войск в Курской битве (1943)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 8, 'День российского кино');
+            INSERT INTO events (day, month, event_name)
+            VALUES (29, 8, 'День шахтера в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 9, 'День знаний');
+            INSERT INTO events (day, month, event_name)
+            VALUES (2, 9, 'День российской гвардии ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (3, 9, 'День солидарности в борьбе с терроризмом');
+            INSERT INTO events (day, month, event_name)
+            VALUES (4, 9, 'День специалиста по ядерному обеспечению');
+            INSERT INTO events (day, month, event_name)
+            VALUES (5, 9, 'День работников нефтяной, газовой и топливной промышленности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 9,
+            'День воинской славы России — День Бородинского сражения русской армии под командованием М. И. Кутузова с французской армией (1812 год');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 9, 'День финансиста России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (9, 9, 'День тестировщика');
+            INSERT INTO events (day, month, event_name)
+            VALUES (11, 9,
+            'День воинской славы России — День победы русской эскадры контр-адмирала Федора Ушакова над турецкой эскадрой у мыса Тендра (1790)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 9, 'День танкиста в России 2010');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 9, 'День памяти жертв фашизма');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 9, 'День Байкала');
+            INSERT INTO events (day, month, event_name)
+            VALUES (17, 9, 'День секретаря');
+            INSERT INTO events (day, month, event_name)
+            VALUES (19, 9, 'День работника леса');
+            INSERT INTO events (day, month, event_name)
+            VALUES (20, 9, 'День рекрутера');
+            INSERT INTO events (day, month, event_name)
+            VALUES (21, 9,
+            'День воинской славы России — День победы русских полков во главе с великим князем Дмитрием Донским над монголо-татарскими войсками в Куликовской битве (1380 год)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (26, 9, 'День машиностроителя');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 9, 'День воспитателя и всех дошкольных работников');
+            INSERT INTO events (day, month, event_name)
+            VALUES (28, 9, 'День работника атомной промышленности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (30, 9, 'День интернета в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 10, 'Международный день пожилых людей в России; День сухопутных войск РФ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (3, 10, 'День ОМОНа');
+            INSERT INTO events (day, month, event_name)
+            VALUES (4, 10, 'День Космических войск; День гражданской обороны МЧС России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (5, 10, 'День учителя; День работников уголовного розыска');
+            INSERT INTO events (day, month, event_name)
+            VALUES (6, 10, 'День российского страховщика');
+            INSERT INTO events (day, month, event_name)
+            VALUES (7, 10, 'День образования штабных подразделений МВД РФ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 10, 'День командира надводного, подводного и воздушного корабля');
+            INSERT INTO events (day, month, event_name)
+            VALUES (10, 10, 'День работника сельского хозяйства и перерабатывающей промышленности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (15, 10, 'День создания адресно-справочной службы Российского государства');
+            INSERT INTO events (day, month, event_name)
+            VALUES (16, 10, 'Всемирный день анестезиолога');
+            INSERT INTO events (day, month, event_name)
+            VALUES (17, 10, 'День работников пищевой промышленности; День работников дорожного хозяйства');
+            INSERT INTO events (day, month, event_name)
+            VALUES (20, 10, 'День военного связиста');
+            INSERT INTO events (day, month, event_name)
+            VALUES (20, 10, 'День рождения Российского военно-морского флота (День моряков-надводников');
+            INSERT INTO events (day, month, event_name)
+            VALUES (22, 10, 'Литературный праздник «Белые журавли»');
+            INSERT INTO events (day, month, event_name)
+            VALUES (23, 10, 'День работников рекламы');
+            INSERT INTO events (day, month, event_name)
+            VALUES (24, 10, 'День подразделений специального назначения');
+            INSERT INTO events (day, month, event_name)
+            VALUES (25, 10, 'День таможенника Российской Федерации; День работника кабельной промышленности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (28, 10, 'День создания армейской авиации России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (29, 10, 'День работников службы вневедомственной охраны МВД');
+            INSERT INTO events (day, month, event_name)
+            VALUES (30, 10, 'День инженера-механика; День памяти жертв политических репрессий');
+            INSERT INTO events (day, month, event_name)
+            VALUES (31, 10,
+            'День автомобилиста; День сурдопереводчика; в 1963 году Коллегией министерства охраны общественного порядка РСФСР было принято решение о создании следственных изоляторов (СИЗО) как нового вида учреждений уголовно-исполнительной системы.');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 11, 'День судебного пристава');
+            INSERT INTO events (day, month, event_name)
+            VALUES (4, 11, 'День воинской славы России — День народного единства');
+            INSERT INTO events (day, month, event_name)
+            VALUES (5, 11, 'День военного разведчика');
+            INSERT INTO events (day, month, event_name)
+            VALUES (6, 11, 'Всемирный день мужчин');
+            INSERT INTO events (day, month, event_name)
+            VALUES (7, 11, 'День воинской славы России — День проведения военного парада на Красной площади в 1941 году');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 11, 'Международный день КВН');
+            INSERT INTO events (day, month, event_name)
+            VALUES (10, 11, 'День российской милиции');
+            INSERT INTO events (day, month, event_name)
+            VALUES (11, 11, 'Всемирный день качества; День памяти (Окончание Первой мировой войны)');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 11, 'День работников Сбербанка России; День специалиста по безопасности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (13, 11, 'День войск радиационной, химической и биологической защиты');
+            INSERT INTO events (day, month, event_name)
+            VALUES (14, 11, 'День социолога');
+            INSERT INTO events (day, month, event_name)
+            VALUES (15, 11, 'День создания подразделений по борьбе с организованной преступностью; Всероссийский день призывника');
+            INSERT INTO events (day, month, event_name)
+            VALUES (17, 11, 'День участкового');
+            INSERT INTO events (day, month, event_name)
+            VALUES (18, 11, 'День рождения Деда Мороза');
+            INSERT INTO events (day, month, event_name)
+            VALUES (19, 11, 'День ракетных войск и артиллерии; День работника стекольной промышленности');
+            INSERT INTO events (day, month, event_name)
+            VALUES (21, 11, 'День бухгалтера России; День работника налоговых органов РФ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (22, 11, 'День психолога в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 11, 'День морской пехоты; День оценщика в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (28, 11, 'День матери в России ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (1, 12, 'Всемирный день борьбы со СПИДом');
+            INSERT INTO events (day, month, event_name)
+            VALUES (2, 12, 'День банковского работника России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (3, 12, 'День юриста в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (4, 12, 'День информатики в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (5, 12,
+            'День воинской славы России — День начала контрнаступления советских войск против немецко-фашистских войск в битве под Москвой (1941');
+            INSERT INTO events (day, month, event_name)
+            VALUES (5, 12, 'День сетевика в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (8, 12, 'День образования российского казначейства');
+            INSERT INTO events (day, month, event_name)
+            VALUES (9, 12, 'День Героев Отечества в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (10, 12, 'День создания службы связи МВД России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (12, 12, 'День Конституции Российской Федерации');
+            INSERT INTO events (day, month, event_name)
+            VALUES (15, 12, 'День памяти журналистов, погибших при исполнении профессиональных обязанностей');
+            INSERT INTO events (day, month, event_name)
+            VALUES (17, 12, 'День Ракетных войск стратегического назначения');
+            INSERT INTO events (day, month, event_name)
+            VALUES (18, 12, 'День подразделений собственной безопасности органов внутренних дел РФ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (18, 12, 'День работников органов ЗАГСа; День риэлтора');
+            INSERT INTO events (day, month, event_name)
+            VALUES (20, 12, 'День работника органов государственной безопасности РФ (День ФСБ) ');
+            INSERT INTO events (day, month, event_name)
+            VALUES (22, 12, 'День энергетика');
+            INSERT INTO events (day, month, event_name)
+            VALUES (23, 12, 'День дальней авиации ВВС России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (24, 12, 'День воинской славы России — День взятия турецкой крепости Измаил');
+            INSERT INTO events (day, month, event_name)
+            VALUES (27, 12, 'День спасателя в России');
+            INSERT INTO events (day, month, event_name)
+            VALUES (6, 12, 'День образования подразделений по контролю за оборотом наркотиков системы МВД России');
+
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,25 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+
+    <changeSet id="1" author="Aleksandr Nevsky">
+        <comment>Create table phrases.</comment>
+        <sql>
+            CREATE TABLE phrases
+            (
+            id      SERIAL,
+            request text NOT NULL,
+            answer  text NOT NULL
+            );
+
+            CREATE INDEX phases_id_index ON phrases (id);
+            CREATE INDEX phases_request_index
+            ON phrases
+            USING gin (to_tsvector('russian', request));
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>

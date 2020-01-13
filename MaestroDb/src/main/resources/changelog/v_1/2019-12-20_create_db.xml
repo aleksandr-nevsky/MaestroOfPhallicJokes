@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="2" author="Aleksandr Nevsky">
+        <comment>Create table</comment>
+        <createTable tableName="events">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="month" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="day" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="event_name" type="TEXT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="Aleksandr Nevsky">
+        <comment>Create index</comment>
+        <createIndex indexName="id_index" tableName="events">
+            <column name="id"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="4" author="Aleksandr Nevsky">
+        <comment>Create index with SQL</comment>
+        <sql>
+            CREATE INDEX day_index ON events (day);
+            CREATE INDEX month_index ON events (day);
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
