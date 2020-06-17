@@ -81,6 +81,8 @@ public class Bot extends TelegramLongPollingBot {
                 sendMessage.setText("Okay :(");
             } else if ((receivedMessage.contains("жопа") || receivedMessage.contains("жопу")) && receivedMessage.contains("хуй")) {
                 sendMessage.setText("ПОШЁЛ НА ХУЙ!!! ДА Я ТЕБЯ В ЖОПУ ВЫЕБУ!!!");
+            } else if ((receivedMessage.contains("поправ"))) {
+                sendMessage.setText("Пиздец! Они могут вломиться к тебе! И сделать с тобой все, что угодно! ВСЁ, ЧТО УГОДНО!!!");
             } else if (receivedMessage.contains("жопа") || receivedMessage.contains("жопу")) {
                 sendMessage.setText("В ЖОПУ БЛЕАТЬ!");
             } else if (receivedMessage.contains("мебель")) {
